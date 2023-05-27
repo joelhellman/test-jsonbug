@@ -22,6 +22,7 @@
     client.on('app.registered', function (appRegisteredData) {
       const { metadata } = appRegisteredData
       const jsonfieldType = typeof metadata.settings.jsonfield
+      console.log(metadata.settings)
       document.getElementById('output').innerHTML = `jsonfieldType is: ${jsonfieldType}`
     })
   </script>
